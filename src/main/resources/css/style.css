@@ -1,0 +1,14 @@
+.root {
+    -fx-font-family: "Segoe UI", Arial, Helvetica;
+    -fx-background-color: linear-gradient(to bottom right, #f6f9ff, #eef4ff);
+}
+
+.button {
+    -fx-background-radius: 8;
+    -fx-padding: 6 12;
+    -fx-font-weight: 600;
+}
+
+.label {
+    -fx-text-fill: #23395d;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.emam.bankingsheba.controller.Withdraw" alignment="CENTER" spacing="12" padding="20">
+    <Label text="Withdraw" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+    <TextField fx:id="amount" promptText="Amount" prefWidth="240" />
+    <HBox spacing="10">
+        <Button fx:id="confirmButton" text="Confirm" onAction="#onConfirm" />
+        <Button fx:id="backButton" text="Back" onAction="#onBack" />
+    </HBox>
+    <Label fx:id="messageLabel" textFill="red" />
+</VBox>

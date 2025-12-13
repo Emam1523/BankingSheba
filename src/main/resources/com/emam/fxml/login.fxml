@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.emam.bankingsheba.controller.Login">
+    <children>
+        <VBox alignment="CENTER" spacing="12" AnchorPane.topAnchor="30" AnchorPane.leftAnchor="30" AnchorPane.rightAnchor="30">
+            <Label text="SmartWallet" style="-fx-font-size: 26px; -fx-font-weight: bold;" />
+            <TextField fx:id="username" promptText="Username" prefWidth="320" />
+            <PasswordField fx:id="password" promptText="Password" prefWidth="320" />
+            <HBox spacing="10" alignment="CENTER">
+                <Button text="Login" fx:id="loginButton" onAction="#login" />
+                <Button text="Register" fx:id="registerButton" onAction="#register" />
+            </HBox>
+            <Label fx:id="messageLabel" textFill="red" />
+        </VBox>
+    </children>
+</AnchorPane>
